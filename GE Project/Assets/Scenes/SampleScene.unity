@@ -288,6 +288,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 0, y: 0, z: 0}
+  randomOffset: 1
   offset: {x: 5, y: 5, z: 0}
 --- !u!64 &31111861
 MeshCollider:
@@ -409,6 +410,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 0, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: -5, y: 0, z: -5}
 --- !u!64 &52862021
 MeshCollider:
@@ -783,6 +785,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 5, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 0, y: 5, z: -5}
 --- !u!64 &612378919
 MeshCollider:
@@ -968,6 +971,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 5, y: 0, z: 10}
+  randomOffset: 1
   offset: {x: -5, y: 5, z: -5}
 --- !u!64 &706158462
 MeshCollider:
@@ -1090,6 +1094,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: -5, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 5, y: 0, z: 0}
 --- !u!64 &750439578
 MeshCollider:
@@ -1230,6 +1235,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: -5, y: 0, z: 10}
+  randomOffset: 1
   offset: {x: 0, y: 5, z: 5}
 --- !u!4 &819153001 stripped
 Transform:
@@ -1313,6 +1319,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: -5, y: 0, z: 10}
+  randomOffset: 1
   offset: {x: -5, y: 0, z: 0}
 --- !u!64 &1082602877
 MeshCollider:
@@ -1390,6 +1397,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 5, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 0, y: 0, z: -5}
 --- !u!64 &1332221895
 MeshCollider:
@@ -1670,6 +1678,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
+  randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
 --- !u!64 &1570703163
 MeshCollider:
@@ -1869,6 +1878,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 0, y: 0, z: 0}
+  randomOffset: 1
   offset: {x: -5, y: 5, z: 0}
 --- !u!64 &1730282313
 MeshCollider:
@@ -2084,6 +2094,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
+  randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1809060173 stripped
 GameObject:
@@ -2125,6 +2136,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 0, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 5, y: 0, z: 5}
 --- !u!4 &1809060177 stripped
 Transform:
@@ -2202,6 +2214,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 5, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 0, y: 0, z: 5}
 --- !u!4 &1894319007 stripped
 Transform:
@@ -2531,6 +2544,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: 5, y: 0, z: 10}
+  randomOffset: 1
   offset: {x: 5, y: 5, z: 5}
 --- !u!4 &2047724883 stripped
 Transform:
@@ -2608,6 +2622,7 @@ MonoBehaviour:
   pursueTarget: {fileID: 1570703162}
   pursueEnabled: 1
   pursueTargetPos: {x: -5, y: 0, z: 5}
+  randomOffset: 1
   offset: {x: 0, y: 0, z: 0}
 --- !u!4 &2049171793 stripped
 Transform:

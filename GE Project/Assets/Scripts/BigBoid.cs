@@ -37,6 +37,7 @@ public class BigBoid : MonoBehaviour
     public BigBoid pursueTarget;
     public bool pursueEnabled;
     public Vector3 pursueTargetPos;
+    public bool randomOffset;
     public Vector3 offset;
 
     public Vector3 Pursue(BigBoid pursueTarget)
@@ -93,7 +94,7 @@ public class BigBoid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(RandomizeOffset());
     }
 
     public void OnDrawGizmos()
@@ -188,6 +189,17 @@ public class BigBoid : MonoBehaviour
             velocity -= (damping * velocity * Time.deltaTime);
 
 
+        }
+
+        
+    }
+
+    IEnumerator RandomizeOffset()
+    {
+        while (randomOffset == true)
+        {
+            offset = new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5));
+            yield return new WaitForSeconds(1);
         }
     }
 }
