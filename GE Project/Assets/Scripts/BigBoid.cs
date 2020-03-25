@@ -24,9 +24,7 @@ public class BigBoid : MonoBehaviour
 
     [Range(0.0f, 10.0f)]
     public float banking = 0.1f;
-
-    public bool playerSteeringEnabled = false;
-    public float playerForce = 100;
+    
 
     public float damping = 0.1f;
 
@@ -57,9 +55,16 @@ public class BigBoid : MonoBehaviour
     {
         Vector3 nextWaypoint = path.NextWaypoint();
 
+        if (path.next == path.waypoints.Count-1)
+        {
+            pursueEnabled = true;
+            pathFollowingEnabled = false;
+            return Seek(pursueTargetPos);
+        }
+
         if (!path.looped && path.IsLast())
         {
-            return Arrive(nextWaypoint);
+            return Seek(nextWaypoint);
         }
         else
         {
@@ -72,29 +77,12 @@ public class BigBoid : MonoBehaviour
     }
 
 
-
-
-    public Vector3 PlayerSteering()
-    {
-        Vector3 f = Vector3.zero;
-
-        f += Input.GetAxis("Vertical") * transform.forward * playerForce;
-
-        Vector3 projectedRight = transform.right;
-        projectedRight.y = 0;
-        projectedRight.Normalize();
-
-        f += Input.GetAxis("Horizontal") * projectedRight * playerForce * 0.2f;
-
-
-        return f;
-    }
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(RandomizeOffset());
+        //StartCoroutine(RandomizeOffset());
     }
 
     public void OnDrawGizmos()
@@ -149,10 +137,6 @@ public class BigBoid : MonoBehaviour
         if (arriveEnabled)
         {
             force += Arrive(target);
-        }
-        if (playerSteeringEnabled)
-        {
-            force += PlayerSteering();
         }
 
         if (pathFollowingEnabled)
