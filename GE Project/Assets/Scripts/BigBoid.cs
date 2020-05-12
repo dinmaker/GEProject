@@ -77,14 +77,6 @@ public class BigBoid : MonoBehaviour
     }
 
 
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //StartCoroutine(RandomizeOffset());
-    }
-
     public void OnDrawGizmos()
     {
 

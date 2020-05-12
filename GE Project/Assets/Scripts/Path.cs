@@ -50,16 +50,4 @@ public class Path : MonoBehaviour
     {
         return (next == waypoints.Count - 1);
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
