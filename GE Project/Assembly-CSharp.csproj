@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Flock.cs" />
+    <Compile Include="Assets\FlockManager.cs" />
     <Compile Include="Assets\Imported assets\Planet Earth Free\SpinFree.cs" />
     <Compile Include="Assets\Imported assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\BigBoid.cs" />
