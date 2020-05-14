@@ -68,6 +68,7 @@
     <Compile Include="Assets\Imported assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\BigBoid.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
+    <Compile Include="Assets\TrackShip.cs" />
     <None Include="Assets\Imported assets\SpaceCraft 0\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mrdin/Documents/GitHub/GEProject/GE Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

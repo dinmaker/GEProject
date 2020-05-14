@@ -57,8 +57,6 @@ public class BigBoid : MonoBehaviour
 
         if (path.next == path.waypoints.Count-1)
         {
-            pursueEnabled = true;
-            pathFollowingEnabled = false;
             return Seek(pursueTargetPos);
         }
 
