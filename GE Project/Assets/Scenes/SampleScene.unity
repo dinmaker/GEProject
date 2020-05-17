@@ -539,24 +539,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1726659984}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1726659985}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &25812681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25812675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 25812677}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &27642408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1115,53 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &41594386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41594387}
+  - component: {fileID: 41594388}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41594387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41594386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 686089611}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &41594388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41594386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 1418, y: -35.1, z: -1020}
+  next: 0
+  looped: 1
 --- !u!1 &42587629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,24 +2093,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 539322390}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 539322391}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &127931375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127931369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 127931371}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &136563060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2226,6 +2335,53 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &159035563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159035565}
+  - component: {fileID: 159035564}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159035564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159035563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -547.7, y: 167.4, z: -836.7}
+  next: 0
+  looped: 1
+--- !u!4 &159035565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159035563}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1008798972}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &166581377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2980,6 +3136,42 @@ PlayableDirector:
     value: {fileID: 1403283148}
   - key: {fileID: 1283708393452356103, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
     value: {fileID: 1767565517}
+  - key: {fileID: -7111109579296326995, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1085369000}
+  - key: {fileID: 3857311651872476496, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1280664164}
+  - key: {fileID: 3641677703944234017, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 443597088}
+  - key: {fileID: -8313584501135894863, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 540240625}
+  - key: {fileID: -4569420954255202691, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 402633296}
+  - key: {fileID: -9051117352004382287, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1136745155}
+  - key: {fileID: 6125438896120278974, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 25812681}
+  - key: {fileID: 2866537395816564193, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 464934299}
+  - key: {fileID: 4499410507482677925, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1981309822}
+  - key: {fileID: -4330146422872993324, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 731567355}
+  - key: {fileID: 2429813116558772724, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 619358841}
+  - key: {fileID: -7511618406997568935, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1503249234}
+  - key: {fileID: -3247293950891777083, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 686089616}
+  - key: {fileID: 923739790848135249, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1184515989}
+  - key: {fileID: 4371068276688601758, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1200097232}
+  - key: {fileID: -3067186796173317108, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 127931375}
+  - key: {fileID: -6075313061949144236, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1237372069}
+  - key: {fileID: -1234698768703255333, guid: 1ab4768c33567124d8c5ac294ece68c2, type: 2}
+    value: {fileID: 1008798974}
   m_ExposedReferences:
     m_References:
     - 090812b83ed584c41a9480cbe88b20c1: {fileID: 1766867216}
@@ -5071,24 +5263,102 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1118606088}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1118606089}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &402633296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402633290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 402633292}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!1 &427429534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427429535}
+  - component: {fileID: 427429536}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427429535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427429534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1200097227}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &427429536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427429534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 1145, y: 158.9, z: -1020}
+  next: 0
+  looped: 1
 --- !u!1 &442295417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,24 +5514,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 2086991880}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 2086991881}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &443597088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443597082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 443597084}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &453476545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5538,24 +5839,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1802716701}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1802716702}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &464934299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464934293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 464934295}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &467894298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5832,6 +6164,53 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &521230842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521230843}
+  - component: {fileID: 521230844}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &521230843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521230842}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1503249229}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521230844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521230842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 1109.15, y: 319.1, z: -1020}
+  next: 0
+  looped: 1
 --- !u!1 &522601621
 GameObject:
   m_ObjectHideFlags: 0
@@ -6162,6 +6541,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1767727560}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &539322389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539322390}
+  - component: {fileID: 539322391}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539322390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539322389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 127931370}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &539322391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539322389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 536.1, y: 0, z: -843.6}
+  next: 0
+  looped: 1
 --- !u!1 &540240619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1247619388254216, guid: 873baea37cdd7424c83ba02ad24c23b2,
@@ -6190,24 +6616,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1106999919}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1106999920}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &540240625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540240619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 540240621}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &547809403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7360,24 +7817,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1805466327}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1805466328}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &619358841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619358835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 619358837}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &632218178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -7917,24 +8405,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 41594387}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 41594388}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &686089616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686089610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 686089612}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &687232747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8472,7 +8991,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.138e-42, y: 1.02e-43, z: 3.8491558e+9, w: 0}
+  m_BoundingSphereOverride: {x: NaN, y: 3.9079847e-14, z: 674084.56, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -8696,24 +9215,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1346041492}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1346041493}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &731567355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731567349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 731567351}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &745352740
 GameObject:
   m_ObjectHideFlags: 0
@@ -11922,24 +12472,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 159035565}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 159035564}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1008798974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008798971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1008798973}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1014696838
 GameObject:
   m_ObjectHideFlags: 0
@@ -12820,17 +13401,17 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1775375019}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
   path: {fileID: 1775375020}
   pursueTarget: {fileID: 0}
@@ -12838,6 +13419,37 @@ MonoBehaviour:
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1085369000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085368995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1085368996}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1095799108
 GameObject:
   m_ObjectHideFlags: 0
@@ -13039,6 +13651,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
+--- !u!1 &1106999918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1106999919}
+  - component: {fileID: 1106999920}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106999919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106999918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 540240620}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106999920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106999918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -447.8, y: -13.6, z: -895.2}
+  next: 0
+  looped: 1
 --- !u!1 &1107998807
 GameObject:
   m_ObjectHideFlags: 0
@@ -13084,6 +13743,53 @@ Transform:
   m_Father: {fileID: 729810915}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!1 &1118606087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118606088}
+  - component: {fileID: 1118606089}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118606088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118606087}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 402633291}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118606089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118606087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -988.8, y: 99.7, z: -945.54}
+  next: 0
+  looped: 1
 --- !u!1 &1119916992
 GameObject:
   m_ObjectHideFlags: 0
@@ -13569,24 +14275,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1756160355}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1756160356}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1136745155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136745149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1136745151}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1150881979
 GameObject:
   m_ObjectHideFlags: 0
@@ -13863,24 +14600,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1682643051}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1682643052}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1184515989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184515983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1184515985}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1200097226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1247619388254216, guid: 873baea37cdd7424c83ba02ad24c23b2,
@@ -13909,24 +14677,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 427429535}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 427429536}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1200097232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200097226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1200097228}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1221564186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14290,24 +15089,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1845468649}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1845468650}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1237372069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237372063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1237372065}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1243220339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14329,7 +15159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4101211991966078, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -268
+      value: -373.4
       objectReference: {fileID: 0}
     - target: {fileID: 4101211991966078, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14382,6 +15212,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
+--- !u!1 &1248442595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1248442596}
+  - component: {fileID: 1248442597}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1248442596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248442595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1981309817}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248442597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248442595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 68.1, y: -30.8, z: -654.2}
+  next: 0
+  looped: 1
 --- !u!1 &1248985615 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -14971,24 +15848,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 13
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1579195736}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1579195737}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1280664164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280664158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1280664160}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1289707203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -16019,6 +16927,53 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &1346041491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346041492}
+  - component: {fileID: 1346041493}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346041492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346041491}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 731567350}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346041493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346041491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 489, y: 140, z: -1020}
+  next: 0
+  looped: 1
 --- !u!4 &1353503985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4376252303983936, guid: 8e35ec7e332c3d243ac23e3686bafe01,
@@ -17786,24 +18741,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 521230843}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 521230844}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1503249234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503249228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1503249230}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1503696584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17967,7 +18953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4101211991966078, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -355
+      value: -526
       objectReference: {fileID: 0}
     - target: {fileID: 4101211991966078, guid: 873baea37cdd7424c83ba02ad24c23b2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -19011,6 +19997,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1579195735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579195736}
+  - component: {fileID: 1579195737}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579195736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579195735}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1280664159}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579195737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579195735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 37.8, y: 128, z: -739.9}
+  next: 0
+  looped: 1
 --- !u!1001 &1592000517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19977,6 +21010,53 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &1682643050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682643051}
+  - component: {fileID: 1682643052}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1682643051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682643050}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1184515984}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682643052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682643050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 1395.21, y: 189.5, z: -1020}
+  next: 0
+  looped: 1
 --- !u!1 &1686522223 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -20330,6 +21410,53 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1726659983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726659984}
+  - component: {fileID: 1726659985}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726659984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726659983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 25812676}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726659985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726659983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -1449, y: 73, z: -705}
+  next: 0
+  looped: 1
 --- !u!1001 &1729808682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20673,6 +21800,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+--- !u!1 &1756160354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756160355}
+  - component: {fileID: 1756160356}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756160355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756160354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1136745150}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756160356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756160354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -1009.9, y: 0, z: -925.2}
+  next: 0
+  looped: 1
 --- !u!1 &1764381408
 GameObject:
   m_ObjectHideFlags: 0
@@ -21157,7 +22331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 14.5, y: 0, z: -1020}
+  - {x: 121.47, y: 79.9, z: -770.1}
   next: 0
   looped: 1
 --- !u!1 &1781993881 stripped
@@ -21363,6 +22537,100 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &1802716700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1802716701}
+  - component: {fileID: 1802716702}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1802716701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802716700}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 464934294}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802716702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802716700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -332.8, y: 0, z: -767.9}
+  next: 0
+  looped: 1
+--- !u!1 &1805466326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805466327}
+  - component: {fileID: 1805466328}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1805466327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805466326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619358836}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1805466328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805466326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 784.6, y: 103.74, z: -834.3}
+  next: 0
+  looped: 1
 --- !u!1 &1809060173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -21916,6 +23184,53 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1845468648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845468649}
+  - component: {fileID: 1845468650}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845468649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845468648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1237372064}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845468650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845468648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: 245.37, y: 138.9, z: -836.6}
+  next: 0
+  looped: 1
 --- !u!1 &1853937197
 GameObject:
   m_ObjectHideFlags: 0
@@ -24300,24 +25615,55 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   mass: 1
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 10
+  maxForce: 15
   speed: 0
   seekEnabled: 0
   target: {x: 0, y: 0, z: 0}
-  targetTransform: {fileID: 0}
+  targetTransform: {fileID: 1248442596}
   arriveEnabled: 0
   slowingDistance: 10
   banking: 0.1
   damping: 0.1
-  pathFollowingEnabled: 1
+  pathFollowingEnabled: 0
   waypointDistance: 3
-  path: {fileID: 0}
+  path: {fileID: 1248442597}
   pursueTarget: {fileID: 0}
   pursueEnabled: 0
   pursueTargetPos: {x: 0, y: 0, z: 0}
   randomOffset: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &1981309822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981309816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a83c5129783b7d140848983129504e1e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1981309818}
+          m_MethodName: ActivatePath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1982237955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
@@ -25926,6 +27272,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+--- !u!1 &2086991879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086991880}
+  - component: {fileID: 2086991881}
+  m_Layer: 0
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086991880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086991879}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 443597083}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086991881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086991879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5278b24343d2744ea51bdcfdc184aac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -54.18, y: 118.4, z: -820.3}
+  next: 0
+  looped: 1
 --- !u!1001 &2092090879
 PrefabInstance:
   m_ObjectHideFlags: 0

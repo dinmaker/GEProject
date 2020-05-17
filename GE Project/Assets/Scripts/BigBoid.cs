@@ -176,4 +176,9 @@ public class BigBoid : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
     }
+
+    public void ActivatePath()
+    {
+        pathFollowingEnabled = true;
+    }
 }
