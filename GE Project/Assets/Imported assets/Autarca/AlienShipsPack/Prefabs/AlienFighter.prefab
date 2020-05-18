@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4154595508381948}
   - component: {fileID: 33463663454310500}
   - component: {fileID: 23048021916812000}
+  - component: {fileID: -6498533513243873576}
+  - component: {fileID: 2030327804176879971}
   m_Layer: 0
   m_Name: AlienFighter
   m_TagString: Untagged
@@ -79,6 +81,53 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-6498533513243873576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458391615630120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed5125d43b846414eaed833e2a0c13f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
+  mass: 1
+  maxSpeed: 15
+  maxForce: 20
+  speed: 0
+  seekEnabled: 1
+  target: {x: 0, y: 0, z: 0}
+  targetTransform: {fileID: 0}
+  arriveEnabled: 0
+  slowingDistance: 10
+  banking: 0.1
+  damping: 0.1
+  pathFollowingEnabled: 0
+  waypointDistance: 3
+  path: {fileID: 0}
+  pursueTarget: {fileID: 0}
+  pursueEnabled: 0
+  pursueTargetPos: {x: 0, y: 0, z: 0}
+  randomOffset: 0
+  offset: {x: 0, y: 0, z: 0}
+--- !u!135 &2030327804176879971
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458391615630120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9192554
+  m_Center: {x: 0, y: -0.098113626, z: -0.30684307}
 --- !u!1 &729552348789078459
 GameObject:
   m_ObjectHideFlags: 0

@@ -62,6 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csShowAllEffect.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
+    <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Imported assets\Planet Earth Free\SpinFree.cs" />
     <Compile Include="Assets\Imported assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\BigBoid.cs" />
@@ -69,6 +77,7 @@
     <Compile Include="Assets\Scripts\FlockManager.cs" />
     <Compile Include="Assets\Scripts\Path.cs" />
     <Compile Include="Assets\Scripts\TrackShip.cs" />
+    <Compile Include="Assets\SpawnFighters.cs" />
     <None Include="Assets\Imported assets\SpaceCraft 0\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mrdin/Documents/GitHub/GEProject/GE Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
