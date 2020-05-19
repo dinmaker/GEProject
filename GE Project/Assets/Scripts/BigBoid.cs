@@ -181,4 +181,10 @@ public class BigBoid : MonoBehaviour
     {
         pathFollowingEnabled = true;
     }
+
+    public IEnumerator DestroyFighter()
+    {
+        yield return new WaitForSeconds(10.0f);
+        Destroy(this.gameObject);
+    }
 }

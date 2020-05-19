@@ -8,6 +8,10 @@ public class backgroundExplosions : MonoBehaviour
     public GameObject exp2;
     public GameObject exp3;
 
+    GameObject one;
+    GameObject two;
+    GameObject three;
+
     bool exploding;
 
     // Start is called before the first frame update
@@ -20,11 +24,16 @@ public class backgroundExplosions : MonoBehaviour
     IEnumerator Explosion()
     {
         exploding = true;
-        yield return new WaitForSeconds(1.0f);
-        Instantiate(exp1, new Vector3(Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f)), Quaternion.identity);
-        Instantiate(exp2, new Vector3(Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f)), Quaternion.identity);
-        Instantiate(exp3, new Vector3(Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f)), Quaternion.identity);
+        yield return new WaitForSeconds(0.5f);
+        one = Instantiate(exp1, new Vector3(Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f)), Quaternion.identity);
+        two = Instantiate(exp2, new Vector3(Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f)), Quaternion.identity);
+        three = Instantiate(exp3, new Vector3(Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f), Random.Range(-500.0f, 500.0f)), Quaternion.identity);
         exploding = false;
+        yield return new WaitForSeconds(1.0f);
+        Destroy(one);
+        Destroy(two);
+        Destroy(three);
+
     }
 
     void Update()

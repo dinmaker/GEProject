@@ -62,15 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\Script\csShowAllEffect.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
-    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
     <Compile Include="Assets\backgroundExplosions.cs" />
     <Compile Include="Assets\Explosion.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csShowAllEffect.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
+    <Compile Include="Assets\Imported assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
     <Compile Include="Assets\Imported assets\Planet Earth Free\SpinFree.cs" />
     <Compile Include="Assets\Imported assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Scripts\BigBoid.cs" />
