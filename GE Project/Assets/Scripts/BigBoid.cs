@@ -182,6 +182,15 @@ public class BigBoid : MonoBehaviour
         pathFollowingEnabled = true;
     }
 
+    public void stopShip()
+    {
+        pathFollowingEnabled = false;
+        arriveEnabled = false;
+        seekEnabled = false;
+        pursueEnabled = false;
+        maxSpeed = 0;
+    }
+
     public IEnumerator DestroyFighter()
     {
         yield return new WaitForSeconds(10.0f);

@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\backgroundExplosions.cs" />
+    <Compile Include="Assets\EndCutscene.cs" />
     <Compile Include="Assets\Explosion.cs" />
     <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
     <Compile Include="Assets\Imported assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
